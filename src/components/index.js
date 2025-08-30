@@ -1,5 +1,6 @@
 export { default as SidebarComponent } from "./SidebarComponent"
 import Recentactivity from './Recentactivity';
+import Todolist from './Todolist';
 
 export {default as Navbar} from "./Navbar"
 export {default as Homepage} from "./Homepage"
@@ -16,3 +17,8 @@ export {default as Recentactivity } from "./Recentactivity"
 export {default as LectureSch } from "./LectureSch"
 export {default as Lectures } from "./Lectures"
 export {default as Spenthours } from "./Spenthours"
+
+export {default as Todolist} from "./Todolist"
+
+export {default as Totalcourses} from "./Totalcourses"
+export {default as Userprogress} from "./Userprogress"
