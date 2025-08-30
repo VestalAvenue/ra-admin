@@ -8,7 +8,7 @@ const Totalcourses = ({className = "", ...props}) => {
       <h1 className ="text-lg font-bold text-stone-500">Total Courses</h1>
       <p className ="text-[12px] font-semibold text-stone-500 hover:text-stone-400">Latest Update</p>
       <div className = "flex flex-row flex-1 pt-3">
-        <p className ="text-xl font-bold text-stone-800">2k+</p>
+        <p className ="text-xl font-bold text-stone-600">2k+</p>
         <Totalcoursechart className =""/>
       </div>
     </div>
