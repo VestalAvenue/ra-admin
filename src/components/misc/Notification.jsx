@@ -14,7 +14,7 @@ export  function Notification() {
   };
 
   return (
-    <div className="flex flex-col w-full pt-2">
+    <div className="flex flex-col w-full pt-2 ">
         <h1 className="text-lg font-bold text-gray-700 pl-3">Notifications</h1>
       {notifications.map((notification) => (
         <div

@@ -15,7 +15,12 @@ export  function Shoppingcart() {
 
   return (
     <div className="flex flex-col w-full pt-2">
+        <div className = "flex flex-row justify-between">
         <h1 className="text-lg font-bold text-gray-700 pl-3">Notifications</h1>
+        <button >
+             <X className=""/>
+        </button>
+        </div>
       {notifications.map((notification) => (
         <div
           key={notification.id}
