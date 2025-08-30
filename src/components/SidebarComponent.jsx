@@ -75,8 +75,8 @@ const SidebarComponent = () => {
 
   return (
     <Sidebar collapsible="icon" collapsedWidth="10rem">
-      <SidebarHeader className={`"p-4 mt-2 ml-2  items-center " ${state === "collapsed" ? "mr-3 ml-3 mb-0" : " flex flex-row"}`}>
-        <Link href ="/" className = "flex ">
+      <SidebarHeader className={`"p-4 mt-2 ml-2  items-center " ${state === "collapsed" ? " justify-center" : " flex flex-row"}`}>
+        <Link to="/" className={`flex ${state === "collapsed" ? "h-6 w-6 pt-1 mr-1" : ""}`}>
         <div className="w-10 h-10">
           <img src={logo} alt="Logo" className="sidebar-logo" />
         </div>
@@ -94,13 +94,13 @@ const SidebarComponent = () => {
         <SidebarGroup>
           <SidebarGroupLabel className = "bg-gray-200 text-cyan-400 px-3 py-1 rounded-md max-w-25">DASHBOARD</SidebarGroupLabel>
           <SidebarGroupContent>
-            <SidebarMenu>
+            <SidebarMenu className="mt-3" >
                 <Collapsible defaultOpen className="group/collapsible">
                   <SidebarMenuItem>
                     <CollapsibleTrigger asChild>
-                      <SidebarMenuButton className="my-2 mx-2 active:bg-blue-500 flex items-center gap-2">
+                      <SidebarMenuButton className={`my-2 mx-2 active:bg-blue-500 flex items-center gap-2 ${state === "collapsed" ? "" : ""}`}>
                             {/* Left Icon */}
-                            <LayoutDashboardIcon className="h-4 w-4" />
+                            <LayoutDashboardIcon className={`${state === "collapsed" ? "" : ""  }`} />
 
                             {/* Label */}
                             <span className="flex-1 text-left">Dashboard</span>
@@ -131,66 +131,7 @@ const SidebarComponent = () => {
           </SidebarGroupContent>
         </SidebarGroup>
 
-        <SidebarGroup>
-          <SidebarGroupLabel>MANAGEMENT</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-
-              {/* Collapsible Dashboard Section */}
-              <Collapsible defaultClose className="group/collapsible">
-                <SidebarMenuItem>
-                  <CollapsibleTrigger asChild>
-                    <SidebarMenuButton>
-                      <ChevronRight className="mr-2 h-4 w-4 transition-transform group-data-[state=open]/collapsible:rotate-90" />
-                      Dashboard
-                    </SidebarMenuButton>
-                  </CollapsibleTrigger>
-
-                  <CollapsibleContent>
-                    <SidebarMenuSub>
-                      <SidebarMenuSubItem>
-                        <SidebarMenuButton>Overview</SidebarMenuButton>
-                      </SidebarMenuSubItem>
-                      <SidebarMenuSubItem>
-                        <SidebarMenuButton>Analytics</SidebarMenuButton>
-                      </SidebarMenuSubItem>
-                      <SidebarMenuSubItem>
-                        <SidebarMenuButton>Reports</SidebarMenuButton>
-                      </SidebarMenuSubItem>
-                    </SidebarMenuSub>
-                  </CollapsibleContent>
-                </SidebarMenuItem>
-              </Collapsible>
-
-              
-              <Collapsible className="group/collapsible">
-                <SidebarMenuItem>
-                  <CollapsibleTrigger asChild>
-                    <SidebarMenuButton>
-                      <ChevronRight className="mr-2 h-4 w-4 transition-transform group-data-[state=open]/collapsible:rotate-90" />
-                      Settings
-                    </SidebarMenuButton>
-                  </CollapsibleTrigger>
-
-                  <CollapsibleContent>
-                    <SidebarMenuSub>
-                      <SidebarMenuSubItem>
-                        <SidebarMenuButton>Profile</SidebarMenuButton>
-                      </SidebarMenuSubItem>
-                      <SidebarMenuSubItem>
-                        <SidebarMenuButton>Billing</SidebarMenuButton>
-                      </SidebarMenuSubItem>
-                      <SidebarMenuSubItem>
-                        <SidebarMenuButton>Team</SidebarMenuButton>
-                      </SidebarMenuSubItem>
-                    </SidebarMenuSub>
-                  </CollapsibleContent>
-                </SidebarMenuItem>
-              </Collapsible>
-
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+       
       </SidebarContent>
     </Sidebar>
   )

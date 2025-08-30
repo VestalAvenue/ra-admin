@@ -30,6 +30,8 @@ export default function Todolist({ className = "" }) {
 
   const onKeyAdd = (e) => { if (e.key === "Enter") addItem() }
 
+
+  
   return (
     <div className={cn("rounded-2xl bg-white p-4 shadow-sm flex flex-col h-[30px]", className)}>
       <h2 className="text-lg font-semibold text-stone-600 mb-3">Today Task</h2>
