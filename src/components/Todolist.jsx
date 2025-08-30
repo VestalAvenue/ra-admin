@@ -2,8 +2,17 @@ import React, { useState, useRef } from "react"
 import { Pencil, Trash2, Check, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
+const exampleTasks = [
+  { id: 1, text: "Create Brand design & Logo" },
+  { id: 2, text: "Create To-Do Using React js" },
+  { id: 3, text: "Create Countdown Using js" },
+  { id: 4, text: "Create Form Validation Page" },
+  { id: 5, text: "Create Speech Detection" },
+  { id: 6, text: "Create Webpage Filter" },
+  { id: 7, text: "Create Note app" }
+]
 export default function Todolist({ className = "" }) {
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState(exampleTasks)
   const [text, setText] = useState("")
   const [editingId, setEditingId] = useState(null)
   const editRef = useRef(null)
@@ -11,7 +20,7 @@ export default function Todolist({ className = "" }) {
   const addItem = () => {
     const v = text.trim()
     if (!v) return
-    setItems(prev => [...prev, { id: Date.now(), text: v }])
+    setItems(prev => [ { id: Date.now(), text: v } , ...prev])
     setText("")
   }
 
@@ -26,12 +35,15 @@ export default function Todolist({ className = "" }) {
     setEditingId(null)
   }
 
-  const removeItem = (id) => setItems(prev => prev.filter(i => i.id !== id))
+  const removeItem = (id) => {
+    setItems(prev => prev.filter(i => i.id !== id))
+    console.log("item deleted")
+  }
 
   const onKeyAdd = (e) => { if (e.key === "Enter") addItem() }
 
 
-  
+
   return (
     <div className={cn("rounded-2xl bg-white p-4 shadow-sm flex flex-col h-[30px]", className)}>
       <h2 className="text-lg font-semibold text-stone-600 mb-3">Today Task</h2>

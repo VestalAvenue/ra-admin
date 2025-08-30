@@ -6,7 +6,7 @@ const initialNotifications = [
   { id: 2, content: "Notification 2", time: "10m ago" },
 ];
 
-export  function Notification() {
+export  function Shoppingcart() {
   const [notifications, setNotifications] = useState(initialNotifications);
 
   const handleDelete = (id) => {
