@@ -20,10 +20,10 @@ import {cn} from '@/lib/utils'
 
 export function Totalcoursechart({ className = "", ...props }) {
 	return (
-		<div className={cn("pl-10 " ,{className})} {...props}>
-			<ChartContainer config={chartConfig} className="w-full h-[120px]">
+		<div className={cn("pl-2 " ,{className})} {...props}>
+			<ChartContainer config={chartConfig} className="w-full h-[160px] ">
 				<ResponsiveContainer width="100%" height="100%">
-					<BarChart data={chartData} accessibilityLayer>
+					<BarChart data={chartData} accessibilityLayer className = "pb-5">
 						<CartesianGrid vertical={false} horizontal = {false} />
 						<XAxis
 							dataKey="month"
