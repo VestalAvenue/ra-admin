@@ -22,19 +22,22 @@ import { Dropdown } from 'antd'
 import { Notification } from './misc/Notification'
 import { Bell, X, ShoppingBasket } from "lucide-react"
 import { Shoppingcart } from './misc/Shoppingcart'
+import  {initialItems}  from "@/data/dummy.jsx"
+
 
 const Navbar = () => {
   const { setTheme } = useTheme()
   const [notifOpen, setNotifOpen] = useState(false)
   const [cartOpen, setCartOpen] = useState(false)
   const [messages, setMessages] = useState(false)
+  const [cartItems, setCartItems] = useState(initialItems);
 
   return (
     <div className="p-4 flex items-center justify-between">
       <SidebarTrigger />
 
       <div className="flex items-center gap-4">
-        <DropdownMenu open={cartOpen} onOpenChange={setCartOpen}>
+        <DropdownMenu open={cartOpen} onOpenChange={setCartOpen} >
           <DropdownMenuTrigger asChild>
             <Button variant="outline" size="icon">
               <ShoppingBasket className="h-5 w-5 text-gray-600 dark:text-gray-300" />
@@ -42,7 +45,7 @@ const Navbar = () => {
           </DropdownMenuTrigger>
           <DropdownMenuContent align="center" className="min-w-100">
             {/* Header row */}
-            <Shoppingcart setOpen={cartOpen} />
+            <Shoppingcart setOpen={setCartOpen} items={cartItems} setItems={setCartItems} />
           </DropdownMenuContent>
         </DropdownMenu>
 

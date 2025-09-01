@@ -5877,6 +5877,8 @@ export const initialMeetings = [
   { id: '5', name: 'Sophia Turner', time: '3:15 PM', description: 'Team Retrospective Meeting' },
 ];
 
+
+
 export const sampleProjects = [
   {
     id: 'p1',
@@ -6093,3 +6095,20 @@ export const profile = {
     followers: 54000
 
 }
+
+
+import backback from "./backpack.jpg"
+import sandals from "./sandals.jpg"
+import shoes from "./shoes.jpg"
+import wwatch from "./wwatch.jpg"
+import jacket from "./jacket.jpg"
+
+export const initialItems = [
+  { id: 1, content: "Denim Jacket", time: "2m ago", rating: 5, price: 100, size: "medium", color: "blue" ,image : jacket },
+  { id: 2, content: "Graphic T-Shirt", time: "10m ago", rating: 4, price: 40, size: "large", color: "white" ,image : sandals },
+  { id: 3, content: "Sneakers", time: "15m ago", rating: 3, price: 150, size: "42", color: "black" ,image : shoes },
+  { id: 4, content: "Hoodie", time: "30m ago", rating: 5, price: 80, size: "small", color: "gray" ,image : wwatch },
+  { id: 5, content: "Cargo Pants", time: "1h ago", rating: 2, price: 60, size: "medium", color: "green" ,image : backback },
+  { id: 6, content: "Baseball Cap", time: "2h ago", rating: 4, price: 25, size: "one size", color: "red" ,image : sandals },
+  { id: 7, content: "Leather Belt", time: "3h ago", rating: 5, price: 35, size: "large", color: "brown" ,image : shoes },
+];

@@ -46,12 +46,12 @@ return (
                     <p className=" cursor-pointer text-sm text-stone-400">Time Spent</p>
                 </div>
                 <div>
-                    <p className="flex justify-center text-sm font-bold text-stone-900">20H</p>
-                    <p className="cursor-pointer text-sm text-stone-400">Time Spent</p>
+                    <p className="flex justify-center text-sm font-bold text-stone-900">45</p>
+                    <p className="cursor-pointer text-sm text-stone-400">Lessons Taken</p>
                 </div>
                 <div>
-                    <p className="flex justify-center text-sm font-bold text-stone-900">20H</p>
-                    <p className="cursor-pointer text-sm text-stone-400 hover:text-stone-500">Time Spent</p>
+                    <p className="flex justify-center text-sm font-bold text-stone-900">200</p>
+                    <p className="cursor-pointer text-sm text-stone-400 hover:text-stone-500">Lessons Taken</p>
                 </div>
             </div>
 
