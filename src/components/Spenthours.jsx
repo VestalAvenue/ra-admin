@@ -40,6 +40,20 @@ return (
                 }
             }}
             />
+            <div className = "flex flex-row justify-between pt-2">
+                <div>
+                    <p className="flex justify-center text-sm font-bold text-stone-900 ">20H</p>
+                    <p className=" cursor-pointer text-sm text-stone-400">Time Spent</p>
+                </div>
+                <div>
+                    <p className="flex justify-center text-sm font-bold text-stone-900">20H</p>
+                    <p className="cursor-pointer text-sm text-stone-400">Time Spent</p>
+                </div>
+                <div>
+                    <p className="flex justify-center text-sm font-bold text-stone-900">20H</p>
+                    <p className="cursor-pointer text-sm text-stone-400 hover:text-stone-500">Time Spent</p>
+                </div>
+            </div>
 
     </div>
 )

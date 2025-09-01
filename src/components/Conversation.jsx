@@ -8,37 +8,30 @@ const initialMessages = [
     {
         id: '1',
         content:
-            'Hi there! Welcome to our new platform. How can I assist you today?',
-        sender: 'ai',
+            "Good morning team! I've made some progress on the homepage design. Check it out: [homepage_designing.com]",
+        sender: 'Jeniffer',
         timestamp: new Date(Date.now() - 1000 * 60 * 10).toISOString(),
     },
     {
         id: '2',
         content:
-            "Hello! I'm looking for information about your premium subscription plans.",
+            "Looks great, Alice! I'll start working on the backend functionalities to support it.",
         sender: 'user',
         timestamp: new Date(Date.now() - 1000 * 60 * 9).toISOString(),
     },
     {
         id: '3',
         content:
-            "Great question! Our premium plan offers unlimited access to all features, priority support, and advanced analytics. It's priced at $19.99/month with a 7-day free trial.",
-        sender: 'ai',
+            "I've encountered an issue with the database connection. Can someone help troubleshoot?",
+        sender: 'Jeniffer',
         timestamp: new Date(Date.now() - 1000 * 60 * 8).toISOString(),
     },
     {
         id: '4',
         content:
-            'That sounds interesting. Are there any discounts for annual subscriptions?',
+            'Sure, Charlie. Let\'s hop on a call after lunch to debug it together.',
         sender: 'user',
         timestamp: new Date(Date.now() - 1000 * 60 * 7).toISOString(),
-    },
-    {
-        id: '5',
-        content:
-            'We offer a 20% discount on annual subscriptions, bringing the price down to $191.90 per year, which saves you about $48 compared to the monthly plan.',
-        sender: 'ai',
-        timestamp: new Date(Date.now() - 1000 * 60 * 6).toISOString(),
     },
 ];
 
@@ -116,19 +109,6 @@ export default function Conversation({ className = '' }) {
 
         setMessages((prev) => [...prev, userMessage]);
         setInput('');
-        // setIsTyping(true);
-        // setTimeout(() => {
-        //     const aiMessage = {
-        //         id: (Date.now() + 1).toString(),
-        //         content:
-        //             "Thanks for your message! I'm here to help with any other questions you might have about our services or features.",
-        //         sender: 'ai',
-        //         timestamp: new Date().toISOString(),
-        //     };
-
-        //     setMessages((prev) => [...prev, aiMessage]);
-        //     setIsTyping(false);
-        // }, 1500);
     };
 
     return (

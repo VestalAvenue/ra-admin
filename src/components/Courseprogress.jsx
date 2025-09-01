@@ -19,7 +19,7 @@ return (
         <h1 className="text-base font-bold text-stone-400 mb-2">
             Course Progress
         </h1>
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 justify-between">
             {/* Card 1 */}
             <div className="border border-dashed rounded-lg px-3 py-2 flex items-center gap-2 bg-white">
                 <span className="w-3 h-3 rounded-full bg-cyan-400 inline-block"></span>

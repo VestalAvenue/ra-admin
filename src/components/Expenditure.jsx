@@ -214,15 +214,7 @@ const Expenditure = ({
         In the symphony of success, our total project income resonates as the crescendo of our endeavors.
       </p>
 
-      {/* Floating Action Button (example) */}
-      <button
-        type="button"
-        className="absolute bottom-24 right-4 sm:bottom-4 sm:right-4 bg-cyan-600 hover:bg-cyan-500 text-white rounded-xl p-3 shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
-        aria-label="Open actions"
-      >
-        {/* Simple icon replacement */}
-        <div className="size-5 flex items-center justify-center font-bold">◎</div>
-      </button>
+      
     </div>
   )
 }

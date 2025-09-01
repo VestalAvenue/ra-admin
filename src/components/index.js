@@ -22,3 +22,5 @@ export {default as Todolist} from "./Todolist"
 
 export {default as Totalcourses} from "./Totalcourses"
 export {default as Userprogress} from "./Userprogress"
+export {default as Datatable} from "./Datatable"
+export {default as Datafiles} from "./Datafiles"    

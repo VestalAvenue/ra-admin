@@ -5,6 +5,8 @@ import Expenditure from './Expenditure.jsx'
 import MeetingSchedule from './MeetingSchedule.jsx'
 import Activityhours from './Activityhours.jsx'
 import { Conversation } from './index.js'
+import { Datatable} from './index.js'
+import { Datafiles} from './index.js'
 
 const Homepage = () => {
   return (
@@ -15,9 +17,12 @@ const Homepage = () => {
         <MeetingSchedule className="bg-primary-foreground p-4 rounded shadow min-h-screen sm:min-h-0 " />
         <Activityhours className="bg-primary-foreground p-4 rounded shadow min-h-screen sm:min-h-0 h-100" />
         <Conversation className="bg-primary-foreground p-4 rounded shadow  md:col-span-2 sm:col-span-2 lg:col-span-2 2xl:col-span-2" />
-        <div className="bg-primary-foreground p-4 rounded shadow min-h-screen sm:min-h-0">Card 7</div>
-        <div className="bg-primary-foreground p-4 rounded shadow min-h-screen sm:min-h-0">Card 8</div>
-        <div className="bg-primary-foreground p-4 rounded shadow min-h-screen sm:min-h-0">Card 9</div>
+        <Datatable className="bg-primary-foreground p-4 rounded shadow min-h-screen sm:min-h-0 2xl:col-span-3 lg:col-span-3 md:col-span-2 sm:col-span-2" />
+        <div className="bg-white col-span-full lg:col-span-1 min-h-screen sm:min-h-0 md:h-125 lg:h-110 h-300 m-0 p-0">
+          <div className = "grid grid-rows-6 md:h-123 ">
+            <Datafiles className = "md:row-span-6 shadow-md rounded" >asd</Datafiles>
+          </div>
+        </div>
 </div>
 
   )
