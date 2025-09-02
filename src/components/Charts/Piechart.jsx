@@ -1,6 +1,6 @@
 import { TrendingUp } from "lucide-react";
 import { Pie, PieChart , Cell } from "recharts";
-
+import {useState} from "react"
 import {
   Card,
   CardContent,
@@ -40,6 +40,8 @@ const chartConfig = {
 };
 
 export function Piechart() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
   return (
     <Card className="flex flex-row border-0 shadow-none">
       <CardContent className="flex-1 pb-0">
@@ -56,7 +58,7 @@ export function Piechart() {
               data={chartData}
               dataKey="total"    
               nameKey="category" 
-              innerRadius={60}
+              innerRadius={50}
             >
              {chartData.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={entry.fill} className={`

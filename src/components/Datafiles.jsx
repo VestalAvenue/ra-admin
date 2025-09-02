@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import { FileText , Folder} from "lucide-react"
 const Datafiles = ({ className = "", ...props }) => {
   return (
-    <div className={cn("", className)} {...props}>
+    <div className={cn("rounded-lg dark:bg-stone-900", className)} {...props}>
       <h1 className="text-xl font-bold text-stone-500 pl-5 pt-5">Data Folder and Files</h1>
       <div className="flex flex-row border-1 border-dashed rounded-2xl m-3 p-0 justify-between">
         <div className="flex items-center pl-2">

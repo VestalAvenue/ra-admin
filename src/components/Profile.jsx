@@ -46,26 +46,26 @@ return (
                 <div className="text-stone-400 text-lg text-center mt-3">
                     <p>"Crafting a Path of Knowledge, Innovation,....</p>
                 </div>
-                <div className="grid grid-cols-4 gap-4 pt-2 items-center text-center">
+                <div className="grid grid-cols-4 gap-4 pt-2 items-center cursor-default text-center">
                     <div className="border-1 border-dashed items-center  py-5">
                         <ClockFading className="mx-auto size-7" />
                         <span className="inline-block px-2 py-0.5 mt-2 text-xs font-semibold rounded-full bg-[#DFF5F8] text-[#4FC9E0] transition-colors duration-200 hover:bg-[#4FC9E0] hover:text-white">
                             {profile.hours}H
                         </span>
                     </div>
-                    <div className="border-1 border-dashed items-center  py-5">
+                    <div className="border-1 border-dashed items-center cursor-default py-5">
                         <BookMarked className="mx-auto size-7" />
                         <span className="inline-block px-2 py-0.5 mt-2 text-xs font-semibold rounded-full bg-[#F3F2F1] text-[#AA8676] transition-colors duration-200 hover:bg-[#AA8676] hover:text-white">
                             {profile.bookmarked}
                         </span>
                     </div>
-                    <div className="border-1 border-dashed items-center  py-5">
+                    <div className="border-1 border-dashed items-center cursor-default py-5">
                         <CircleCheckBig className="mx-auto size-7" />
                         <span className="inline-block px-2 py-0.5 mt-2 text-xs font-semibold rounded-full bg-blue-100 text-blue-700 transition-colors duration-200 hover:bg-blue-700 hover:text-white">
                             {rounded(profile.likes)}
                         </span>
                     </div>
-                    <div className="border-1 border-dashed items-center  py-5">
+                    <div className="border-1 border-dashed items-center cursor-default py-5">
                         <UserRoundCheck className="mx-auto size-7" />
                         <span className="inline-block px-2 py-0.5 mt-2 text-xs font-semibold rounded-full bg-blue-100 text-blue-700 transition-colors duration-200 hover:bg-blue-700 hover:text-white">
                             {rounded(profile.followers)}

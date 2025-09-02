@@ -15,7 +15,7 @@ import {TrendingUp} from "lucide-react"
 import {Piechart} from './Charts/Piechart'
 const Courseprogress = ({className= " " , ...props}) => {
 return (
-    <div className={cn("p-2 rounded shadow h-full", className)} {...props}>
+    <div className={cn("p-2 rounded shadow h-full dark:bg-stone-900", className)} {...props}>
         <h1 className="text-base font-bold text-stone-400 mb-2">
             Course Progress
         </h1>

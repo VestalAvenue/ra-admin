@@ -96,7 +96,7 @@ const SidebarComponent = () => {
           <SidebarGroupContent>
             <SidebarMenu className="mt-3" >
                 <Collapsible defaultOpen className="group/collapsible">
-                  <SidebarMenuItem>
+                  <SidebarMenuItem className= "border-0">
                     <CollapsibleTrigger asChild>
                       <SidebarMenuButton className={`my-2 mx-2 active:bg-blue-500 flex items-center gap-2 ${state === "collapsed" ? "" : ""}`}>
                             {/* Left Icon */}
@@ -111,7 +111,7 @@ const SidebarComponent = () => {
                     </CollapsibleTrigger>
 
                     <CollapsibleContent>
-                      <SidebarMenuSub>
+                      <SidebarMenuSub className={`border-0 p-0 mr-1 ${state === "collapsed" ? "" : ""}`}>
                         {dashboard.map((item, index) => (
                           <SidebarMenuSubItem key={index}>
                             <Link to={item.url} className="flex items-center gap-2 w-full">
